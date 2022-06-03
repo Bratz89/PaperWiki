@@ -1,0 +1,59 @@
+.mainContainerSide {
+    display: flex;
+    position: fixed; 
+    left:0;
+    top:0;
+    flex-direction: column;
+    background-color: #171725;
+    min-width: 70px;
+    max-width: 70px;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    z-index: 2000;
+}
+
+
+.Item {
+    transition-duration: 400ms;
+    display: flex;
+    z-index: 2;
+    width: 40px;
+    height: 40px;
+    background-color: #2e2e3c;
+    border-radius: 12px;
+    color: #FFFAF0;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.Item:hover {
+    transition-duration: 400ms;
+    background-color: #FFFAF0;
+    color: #2e2e3c;
+}
+
+
+.TopBarContainer {
+    z-index: 1999;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: #FFFAF0;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    height: 40px;    
+}
+ 
+.TopBarItem{
+    transition-duration: 400ms;
+    color: #171725;
+}
+.TopBarItem:hover{
+    transition-duration: 400ms;
+    color: #585760;
+}
