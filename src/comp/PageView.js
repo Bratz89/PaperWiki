@@ -334,7 +334,7 @@ const PageView = (updateData) => {
                     {showCosmoSettings && <button className='ButtonOne' style={{ fontSize: 14, marginRight: 5, backgroundColor: "#585760", color: "#FFFaF0", width: 150 }}>Cosmo DB storage</button>}
                 </div>
                 {!showCosmoSettings && <label>Local storage is selected. This will store pages in browser storage and you will lose all pages if cookies are deleted!</label>}
-                {showCosmoSettings && <label>Cosmo DB is selected. This will store and get pages whit Azure Cosmo DB. Check out https://docs.microsoft.com/en-us/azure/cosmos-db/introduction for more information.</label>}
+                {showCosmoSettings && <label>Cosmo DB is selected. This will store and get pages with Azure Cosmo DB. Check out https://docs.microsoft.com/en-us/azure/cosmos-db/introduction for more information.</label>}
 
                 {showCosmoSettings && <div style={{ display: "flex", flexDirection: "column" }}>   <label style={{ fontSize: 16, textDecoration: "underline", justifyText: "center", marginTop: 20 }}>Cosmo DB settings:</label>
                     <label style={{ fontSize: 16 }}>Endpoint:
