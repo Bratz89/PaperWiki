@@ -1,6 +1,8 @@
 {
   "name": "paperwiki",
-  "version": "0.1.0",
+  "version": "1.0.0",
+  "description": "s",
+  "main": "index.js",
   "private": true,
   "dependencies": {
     "@azure/cosmos": "^3.16.1",
@@ -25,6 +27,15 @@
   },
   "eslintConfig": {
     "extends": "react-app"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bratz89/PaperWiki.git"
+  },
+  "author": "Daniel Bratz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Bratz89/PaperWiki/issues"
   },
   "browserslist": {
     "production": [
