@@ -4,6 +4,6 @@ const config = {
     databaseId: localStorage.COSMOdatabaseID,  
     containerId: localStorage.COSMOcontainerID,  
     partitionKey: { kind: "Hash", paths: ["/id"] }
-  };
+  }; 
   export default config; 
  

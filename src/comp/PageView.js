@@ -12,8 +12,7 @@ import "react-color-palette/lib/css/styles.css";
 if (localStorage.getItem("storageType") === null) {
     localStorage.setItem("storageType", "local")
 }
-
-
+  
 const localData = [
     {
         id: 0,

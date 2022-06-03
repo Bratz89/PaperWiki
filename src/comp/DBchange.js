@@ -9,12 +9,11 @@ async function RequestDB(requestType, ID, newItem, category) {
         key,
         connectionPolicy: {
             enableEndpointDiscovery: false
-        }
+        } 
     })
     const database = client.database(databaseId);
     const container = database.container(containerId);
-
-
+ 
     if (requestType === "GetPageByID") {
         const querry = "SELECT * from " + localStorage.COSMOcontainerID + " f WHERE f.id = " + "'" + ID + "'"
         const querySpec = { query: querry };
@@ -27,8 +26,7 @@ async function RequestDB(requestType, ID, newItem, category) {
         const querry = "SELECT " + localStorage.COSMOcontainerID + ".id, " + localStorage.COSMOcontainerID + ".pageName from " + localStorage.COSMOcontainerID
         const querySpec = { query: querry };
         console.log("DB GetPages")
-        const { resources: items } = await container.items.query(querySpec).fetchAll();
-
+        const { resources: items } = await container.items.query(querySpec).fetchAll(); 
         return (items);
     }
 
@@ -63,9 +61,6 @@ async function RequestDB(requestType, ID, newItem, category) {
         } catch (error) {
             console.log(error.message);
         }
-    }
-
-
-
+    } 
 }
 export default RequestDB;  

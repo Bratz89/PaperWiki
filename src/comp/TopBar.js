@@ -17,7 +17,7 @@ function TopBar() {
                 </div>
             </div>
         </div >
-    )
+    ) 
 }
 
 export default TopBar;
