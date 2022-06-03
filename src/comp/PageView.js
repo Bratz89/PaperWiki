@@ -2,14 +2,13 @@ import React, { useEffect, useState } from "react"
 import { format } from 'date-fns'
 import './DocumentPage.css';
 import DBchange from './DBchange.js'
-//import { ConflictResolutionMode } from "@azure/cosmos";
+import { ConflictResolutionMode } from "@azure/cosmos";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faT, faLink, faList, faCheckSquare, faPoo, faArrowDown, faPalette, faPenToSquare, faW, faBook, faFileLines, faGear, faTrash, faCircleCheck, faCircleXmark, faBookOpen, faGripLines } from '@fortawesome/free-solid-svg-icons'
 import './Bars.css';
 import { ColorPicker, useColor } from "react-color-palette";
 import "react-color-palette/lib/css/styles.css";
-
-
+ 
 if (localStorage.getItem("storageType") === null) {
     localStorage.setItem("storageType", "local")
 }

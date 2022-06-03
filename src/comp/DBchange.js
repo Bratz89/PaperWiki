@@ -1,8 +1,7 @@
 import { ConflictResolutionMode } from "@azure/cosmos";
 import config from './DBconfig.js';
 const CosmosClient = require("@azure/cosmos").CosmosClient;
-
-
+ 
 async function RequestDB(requestType, ID, newItem, category) {
     const { endpoint, key, databaseId, containerId } = config;
     const client = new CosmosClient({

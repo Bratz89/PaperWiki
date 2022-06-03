@@ -1,5 +1,3 @@
-//require('dotenv').config()
-
 const config = { 
     endpoint: localStorage.COSMOendpoint,
     key: localStorage.COSMOapiKey,
